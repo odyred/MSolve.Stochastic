@@ -18,7 +18,8 @@ The first code section creates the stochastic model.
             var m = new MonteCarlo(iterations, realizer, evaluator);
             m.Evaluate();
         }
-    }```
+    }
+```
 
 The model is created using the /CantileverStochasticDomainMapper/ used to describe the mapping from the model geometry to the stochastic domain.
 
