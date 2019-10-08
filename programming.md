@@ -44,3 +44,4 @@ The model is created using the /CantileverStochasticDomainMapper/ used to descri
         }
     }
 ```
+Both classes can be found in the **MSolve.Stochastic.Tests** project.
