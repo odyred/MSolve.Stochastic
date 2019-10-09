@@ -1,7 +1,7 @@
-title: MSolve.Solvers
+title: MSolve.Stochastic
 email: info@mgroup.ntua.gr
 description: > # this means to ignore newlines until "baseurl:"
-Facilitates Stochastic sampling of input data and statistical response analysis of systems with uncertain parameters.
+ Facilitates Stochastic sampling of input data and statistical response analysis of systems with uncertain parameters.
 baseurl: "/MSolve.Stochastic" # the subpath of your site, e.g. /blog
 
 url: "" # the base hostname & protocol for your site
