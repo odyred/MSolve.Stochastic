@@ -1,10 +1,10 @@
-﻿using MGroup.FEM.Entities;
+using MGroup.FEM.Entities;
 using MGroup.Stochastic.Interfaces;
 using MGroup.Stochastic.Structural.StochasticRealizers;
 
 namespace MGroup.Stochastic.Structural
 {
-    public class GiannisStructuralStochasticRealizer : ISystemRealizer
+    public class StructuralStochasticRealizer : ISystemRealizer
     {
         public double YoungModulus { get; }
         private readonly IStochasticDomainMapper DomainMapper;
