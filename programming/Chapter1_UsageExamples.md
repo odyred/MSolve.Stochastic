@@ -2,7 +2,7 @@
 # 1D cantilever beam with uncertain material properties.
 
 The example is a simple one-dimensional cantilever beam where flexibility is modeled through a 1D-Gaussian random field. **MSolve.Stochastic**.
-The first code section creates the stochastic model.
+The first code section creates the stochastic model. To this end the user must determine a stochastic domain mapper, a stochastic realizer for the realization of the uncertain parameter stochastic field, the process of the stochastic response evaluation through a stochastic evaluator and the simulation procedure for the sampling of the stochastic domain space and the evaluation of the stochastic response i.e. Monte Carlo. 
 
 ```csharp
    public class SolveProblem
@@ -21,7 +21,7 @@ The first code section creates the stochastic model.
     }
 ```
 
-The model is created using the /CantileverStochasticDomainMapper/ used to describe the mapping from the model geometry to the stochastic domain.
+The model is created using the *CantileverStochasticDomainMapper* class used to describe the mapping from the model geometry to the stochastic domain.
 
 ```csharp
     public class CantileverStochasticDomainMapper : IStochasticDomainMapper
