@@ -1,4 +1,4 @@
-﻿using MGroup.Analyzers;
+using MGroup.Analyzers;
 using MGroup.FEM.Entities;
 using MGroup.Problems;
 using MGroup.Solvers.Direct;
@@ -7,7 +7,7 @@ using MGroup.Stochastic.Structural.StochasticRealizers;
 
 namespace MGroup.Stochastic.Structural
 {
-    public class StructuralStochasticEvaluator : ISystemRealizer, ISystemResponseEvaluator
+    public class StructuralSystemEvaluator : ISystemRealizer, ISystemResponseEvaluator
     {
         public double YoungModulus { get; }
         public IStochasticDomainMapper DomainMapper;
@@ -27,7 +27,7 @@ namespace MGroup.Stochastic.Structural
         int PCorder = 1;
         bool midpointMethod = true;
 
-        //public StructuralStochasticEvaluator(double youngModulus, IStochasticDomainMapper domainMapper)
+        //public StructuralSystemEvaluator(double youngModulus, IStochasticDomainMapper domainMapper)
         //{
         //    YoungModulus = youngModulus;
         //    DomainMapper = domainMapper;
@@ -35,10 +35,10 @@ namespace MGroup.Stochastic.Structural
         //    StochasticRealization = new RandomVariable(youngModulus, domainMapper);
         //}
 
-        /// <summary>Initializes a new instance of the <see cref="StructuralStochasticEvaluator"/> class.</summary>
+        /// <summary>Initializes a new instance of the <see cref="StructuralSystemEvaluator"/> class.</summary>
         /// <param name="youngModulus">The young modulus.</param>
         /// <param name="domainMapper">The domain mapper.</param>
-        public StructuralStochasticEvaluator(double youngModulus, IStochasticDomainMapper domainMapper)
+        public StructuralSystemEvaluator(double youngModulus, IStochasticDomainMapper domainMapper)
         {
             YoungModulus = youngModulus;
             DomainMapper = domainMapper;
