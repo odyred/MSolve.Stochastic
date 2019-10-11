@@ -37,7 +37,7 @@ You can choose either to clone the solution or downloads it as a zip file.
 
  ![alt text](https://github.com/mgroupntua/MSolve.Edu/blob/master/Images/5.png "5")
 
-6. Click clone and Visual Studio will automatically download and import **MSolve.IGA**
+6. Click clone and Visual Studio will automatically download and import **MSolve.Stochastic**
 
 
 ### Download as ZIP
